@@ -22,19 +22,19 @@
     "url": "https://melodik.es/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
     "slug": "api",
-    "status": "down",
-    "uptime": "25.71%",
-    "uptimeDay": "25.71%",
-    "uptimeWeek": "25.71%",
-    "uptimeMonth": "25.71%",
-    "uptimeYear": "25.71%",
+    "status": "up",
+    "uptime": "9.05%",
+    "uptimeDay": "9.05%",
+    "uptimeWeek": "9.05%",
+    "uptimeMonth": "9.05%",
+    "uptimeYear": "9.05%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-17": 1
+      "2026-11-17": 5
     }
   },
   {
@@ -42,19 +42,19 @@
     "url": "https://melodik.es/api/health/ready",
     "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
     "slug": "base-de-datos",
-    "status": "down",
-    "uptime": "37.51%",
-    "uptimeDay": "37.51%",
-    "uptimeWeek": "37.51%",
-    "uptimeMonth": "37.51%",
-    "uptimeYear": "37.51%",
+    "status": "up",
+    "uptime": "8.59%",
+    "uptimeDay": "8.59%",
+    "uptimeWeek": "8.59%",
+    "uptimeMonth": "8.59%",
+    "uptimeYear": "8.59%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-17": 0
+      "2026-11-17": 5
     }
   },
   {
@@ -63,18 +63,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/erzfttnrdiecmwzftxnp.supabase.co.ico",
     "slug": "inicio-de-sesion",
     "status": "down",
-    "uptime": "67.31%",
-    "uptimeDay": "67.31%",
-    "uptimeWeek": "67.31%",
-    "uptimeMonth": "67.31%",
-    "uptimeYear": "67.31%",
+    "uptime": "3.71%",
+    "uptimeDay": "3.71%",
+    "uptimeWeek": "3.71%",
+    "uptimeMonth": "3.71%",
+    "uptimeYear": "3.71%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-17": 0
+      "2026-11-17": 5
     }
   },
   {
