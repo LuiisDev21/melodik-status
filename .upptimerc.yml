@@ -1,0 +1,185 @@
+# Configuración de Upptime para Melodik.
+# Este fichero es la fuente de verdad: los workflows y el README se regeneran a partir de él.
+# Documentación: https://upptime.js.org/docs/configuration
+
+owner: LuiisDev21
+repo: melodik-status
+user-agent: LuiisDev21
+
+# Solo los secretos que Upptime puede leer. Las URLs vigiladas son públicas,
+# así que la lista queda en el webhook opcional de Discord.
+secrets:
+  - NOTIFICATION_DISCORD_WEBHOOK_URL
+
+sites:
+  - name: Melodik (web)
+    url: https://melodik.es
+    maxResponseTime: 4000
+
+  - name: API
+    url: https://melodik.es/api/health
+    maxResponseTime: 4000
+    # 200 con "ok" o "degraded"; 503 con "down" si la base de datos no contesta.
+    __dangerous__body_down_if_regex_missing: '"status":"(ok|degraded)"'
+
+  - name: Base de datos
+    url: https://melodik.es/api/health/ready
+    maxResponseTime: 4000
+    __dangerous__body_down_if_regex_missing: '"status":"ok"'
+
+  - name: Inicio de sesión
+    url: https://erzfttnrdiecmwzftxnp.supabase.co/auth/v1/health
+    maxResponseTime: 5000
+
+  - name: Deezer
+    url: https://api.deezer.com/artist/27
+    maxResponseTime: 5000
+    # Deezer responde 200 con { error: ... } cuando el recurso no existe.
+    __dangerous__body_down_if_regex_missing: '"id":27'
+
+assignees:
+  - LuiisDev21
+
+status-website:
+  cname: status.melodik.es
+  name: Estado de Melodik
+  logoUrl: https://melodik.es/icons/icon-192.png
+  favicon: https://melodik.es/icons/icon-192.png
+  theme: dark
+  introTitle: "**Estado de Melodik**"
+  introMessage: Disponibilidad de la web, la API, la base de datos y los servicios de los que depende el juego. Los incidentes se abren y se actualizan en [GitHub](https://github.com/LuiisDev21/melodik-status/issues).
+  navbar:
+    - title: Estado
+      href: /
+    - title: Incidentes
+      href: https://github.com/LuiisDev21/melodik-status/issues
+    - title: Melodik
+      href: https://melodik.es
+  css: |
+    :root {
+      --body-background-color: #171721;
+      --body-text-color: #ededf3;
+      --card-background-color: #1e1e2a;
+      --nav-background-color: #171721;
+      --nav-border-bottom-color: #272735;
+      --nav-current-border-bottom-color: #5266eb;
+      --card-border-color: #272735;
+      --down-border-left-color: #e0578f;
+      --down-background-color: rgba(224, 87, 143, .12);
+      --degraded-border-left-color: #f6d36b;
+      --up-border-left-color: #7ee2b8;
+      --tag-color: #0e0e15;
+      --tag-up-background-color: #7ee2b8;
+      --tag-down-background-color: #e0578f;
+      --tag-degraded-background-color: #f6d36b;
+      --change-background-color: #5266eb;
+      --error-button-border-color: #5266eb;
+      --error-button-background-color: #5266eb;
+      --error-button-color: #ffffff;
+      --submit-button-border-color: #5266eb;
+      --submit-button-background-color: #5266eb;
+      --submit-button-color: #ffffff;
+      --code-background-color: #232330;
+      --code-color: #cdddff;
+      --graph-opacity: 1;
+      --graph-filter: none;
+    }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -.01em;
+    }
+    .container { max-width: 880px; }
+    header h1 { font-size: clamp(26px, 4vw, 34px); letter-spacing: -.8px; line-height: 1.15; }
+    header .lead { color: #c3c3cc; line-height: 1.6; }
+    h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: #9cb4e8; }
+    nav .logo img { width: 26px; height: 26px; border-radius: 7px; }
+    nav .logo div { font-weight: 550; letter-spacing: -.2px; }
+    nav a { color: #c3c3cc; }
+    nav a:hover, nav a[aria-current="page"] { color: #ededf3; }
+    article, .card, section { border-radius: 12px; }
+    .up, .down, .degraded { border-radius: 10px; }
+    a { color: #9cb4e8; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    footer { color: #70707d; font-size: 13px; }
+    :focus-visible { outline: 2px solid #5266eb; outline-offset: 2px; }
+
+i18n:
+  activeIncidents: Incidentes activos
+  allSystemsOperational: Todos los sistemas funcionan
+  incidentReport: "Informe del incidente #$NUMBER →"
+  activeIncidentSummary: Abierto el $DATE con $POSTS mensajes
+  incidentTitle: Incidente $NUMBER
+  incidentDetails: Detalle del incidente
+  incidentFixed: Resuelto
+  incidentOngoing: En curso
+  incidentOpenedAt: Abierto el
+  incidentClosedAt: Cerrado el
+  incidentViewOnGitHub: Ver y suscribirse en GitHub
+  incidentCommentSummary: Publicado el $DATE por $AUTHOR
+  incidentBack: ← Volver a los incidentes
+  pastIncidents: Incidentes anteriores
+  pastIncidentsResolved: Resuelto en $MINUTES minutos con $POSTS mensajes
+  liveStatus: Estado en vivo
+  overallUptime: "Disponibilidad total: $UPTIME"
+  overallUptimeTitle: Disponibilidad total
+  averageResponseTime: "Tiempo de respuesta medio: $TIMEms"
+  averageResponseTimeTitle: Respuesta media
+  sevelDayResponseTime: Tiempo de respuesta (7 días)
+  responseTimeMs: Tiempo de respuesta (ms)
+  up: Operativo
+  down: Caído
+  degraded: Degradado
+  ms: ms
+  loading: Cargando
+  navGitHub: GitHub
+  footer: Esta página es [código abierto]($REPO) y funciona con [Upptime](https://upptime.js.org)
+  rateLimitExceededTitle: Límite de peticiones alcanzado
+  rateLimitExceededIntro: Has superado el número de peticiones por hora, así que tendrás que esperar para volver a entrar. También puedes añadir un token de GitHub para seguir usándola.
+  rateLimitExceededWhatDoesErrorMean: ¿Qué significa este error?
+  rateLimitExceededErrorMeaning: Esta página usa la API de GitHub para leer el estado real de los servicios. GitHub permite 60 peticiones por hora a cada IP y las has agotado.
+  rateLimitExceededErrorHowCanFix: ¿Cómo se arregla?
+  rateLimitExceededErrorFix: Puedes esperar una hora a que se restaure el límite o añadir tu token personal de GitHub, que suma 5.000 peticiones por hora.
+  rateLimitExceededGeneratePAT: Cómo generar un token personal
+  rateLimitExceededHasSet: Ya tienes un token configurado.
+  rateLimitExceededRemoveToken: Quitar token
+  rateLimitExceededGitHubPAT: Token personal de GitHub
+  rateLimitExceededCopyPastePAT: Pega tu token
+  rateLimitExceededSaveToken: Guardar token
+  errorTitle: Algo falló
+  errorIntro: No se pudo leer el estado más reciente.
+  errorText: Vuelve a intentarlo en unos segundos.
+  errorHome: Ir al inicio
+  pastScheduledMaintenance: Mantenimientos pasados
+  scheduledMaintenance: Mantenimientos programados
+  scheduledMaintenanceSummaryStarted: Empezó el $DATE y dura $DURATION minutos
+  scheduledMaintenanceSummaryStarts: Empieza el $DATE y dura $DURATION minutos
+  startedAt: Empezó el
+  startsAt: Empieza el
+  duration: Duración
+  durationMin: $DURATION minutos
+  incidentCompleted: Completado
+  incidentScheduled: Programado
+  duration24H: 24 h
+  duration7D: 7 días
+  duration30D: 30 días
+  duration1Y: 1 año
+  durationAll: todo
+  locale: es-ES
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  responseTime: "0 23 * * *"
+  graphs: "0 0 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+
+commitMessages:
+  readmeContent: ":pencil: Resumen actualizado [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Estado actualizado [skip ci] [upptime]"
+  statusChange: "$EMOJI $SITE_NAME está $STATUS ($RESPONSE_CODE en $RESPONSE_TIME ms) [skip ci] [upptime]"
+  graphsUpdate: ":bento: Gráficas actualizadas [skip ci] [upptime]"
+  commitAuthorName: "Upptime Bot"
+  commitAuthorEmail: "73812536+upptime-bot@users.noreply.github.com"
