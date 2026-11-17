@@ -11,13 +11,13 @@ Este README lo regenera Upptime a partir de `.upptimerc.yml`; la documentación 
 
 ## Servicios vigilados
 
-| Servicio | Qué comprueba |
-| --- | --- |
-| Melodik (web) | Que la portada responda. |
-| API | `/api/health` con `status` `ok` o `degraded`. |
-| Base de datos | `/api/health/ready`, que hace una consulta real a Postgres. |
-| Inicio de sesión | `/auth/v1/health` de Supabase Auth. |
-| Deezer | Que el catálogo responda (audio y portadas). |
+| Servicio         | Qué comprueba                                               |
+| ---------------- | ----------------------------------------------------------- |
+| Melodik (web)    | Que la portada responda.                                    |
+| API              | `/api/health` con `status` `ok` o `degraded`.               |
+| Base de datos    | `/api/health/ready`, que hace una consulta real a Postgres. |
+| Inicio de sesión | `/auth/v1/health` de Supabase Auth.                         |
+| Deezer           | Que el catálogo responda (audio y portadas).                |
 
 ## Cómo se opera
 
