@@ -10,7 +10,6 @@ user-agent: LuiisDev21
 # así que la lista queda en el webhook opcional de Discord.
 secrets:
   - NOTIFICATION_DISCORD_WEBHOOK_URL
-  - SUPABASE_ANON_KEY
 
 sites:
   - name: Melodik (web)
@@ -29,12 +28,10 @@ sites:
     __dangerous__body_down_if_regex_missing: '"status":"ok"'
 
   - name: Inicio de sesión
-    url: https://erzfttnrdiecmwzftxnp.supabase.co/auth/v1/health
+    # La app consulta GoTrue desde el servidor: la clave del proyecto no sale del despliegue.
+    url: https://melodik.es/api/health/auth
     maxResponseTime: 5000
-    # GoTrue exige la clave pública del proyecto; es la misma que viaja al navegador.
-    headers:
-      - "apikey: $SUPABASE_ANON_KEY"
-    __dangerous__body_down_if_regex_missing: '"name":"GoTrue"'
+    __dangerous__body_down_if_regex_missing: '"status":"ok"'
 
   - name: Deezer
     url: https://api.deezer.com/artist/27
