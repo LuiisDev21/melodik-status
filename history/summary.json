@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Melodik (web)",
+    "url": "https://melodik.es",
+    "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
+    "slug": "melodik-web",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "API",
+    "url": "https://melodik.es/api/health",
+    "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
+    "slug": "api",
+    "status": "down",
+    "uptime": "25.71%",
+    "uptimeDay": "25.71%",
+    "uptimeWeek": "25.71%",
+    "uptimeMonth": "25.71%",
+    "uptimeYear": "25.71%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-11-17": 1
+    }
+  },
+  {
+    "name": "Base de datos",
+    "url": "https://melodik.es/api/health/ready",
+    "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
+    "slug": "base-de-datos",
+    "status": "down",
+    "uptime": "37.51%",
+    "uptimeDay": "37.51%",
+    "uptimeWeek": "37.51%",
+    "uptimeMonth": "37.51%",
+    "uptimeYear": "37.51%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-11-17": 0
+    }
+  },
+  {
+    "name": "Inicio de sesión",
+    "url": "https://erzfttnrdiecmwzftxnp.supabase.co/auth/v1/health",
+    "icon": "https://icons.duckduckgo.com/ip3/erzfttnrdiecmwzftxnp.supabase.co.ico",
+    "slug": "inicio-de-sesion",
+    "status": "down",
+    "uptime": "67.31%",
+    "uptimeDay": "67.31%",
+    "uptimeWeek": "67.31%",
+    "uptimeMonth": "67.31%",
+    "uptimeYear": "67.31%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-11-17": 0
+    }
+  },
+  {
+    "name": "Deezer",
+    "url": "https://api.deezer.com/artist/27",
+    "icon": "https://icons.duckduckgo.com/ip3/api.deezer.com.ico",
+    "slug": "deezer",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
+  }
+]
