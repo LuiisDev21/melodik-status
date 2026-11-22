@@ -5,18 +5,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
     "slug": "melodik-web",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "90.49%",
+    "uptimeDay": "56.76%",
+    "uptimeWeek": "90.49%",
+    "uptimeMonth": "90.49%",
+    "uptimeYear": "90.49%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-21": 1
+      "2026-11-22": 365,
+      "2026-11-21": 258
     }
   },
   {
@@ -25,18 +26,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
     "slug": "api",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "90.49%",
+    "uptimeDay": "56.77%",
+    "uptimeWeek": "90.49%",
+    "uptimeMonth": "90.49%",
+    "uptimeYear": "90.49%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-21": 1
+      "2026-11-22": 365,
+      "2026-11-21": 257
     }
   },
   {
@@ -45,18 +47,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
     "slug": "base-de-datos",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "90.49%",
+    "uptimeDay": "56.79%",
+    "uptimeWeek": "90.49%",
+    "uptimeMonth": "90.49%",
+    "uptimeYear": "90.49%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-21": 0
+      "2026-11-22": 365,
+      "2026-11-21": 257
     }
   },
   {
@@ -65,18 +68,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/melodik.es.ico",
     "slug": "inicio-de-sesion",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "90.50%",
+    "uptimeDay": "56.81%",
+    "uptimeWeek": "90.50%",
+    "uptimeMonth": "90.50%",
+    "uptimeYear": "90.50%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-21": 0
+      "2026-11-22": 365,
+      "2026-11-21": 257
     }
   },
   {
